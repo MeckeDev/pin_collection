@@ -9,4 +9,115 @@
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
+
+	
+
+<style>
+  /* Main Layout */
+  :root { background-color: #1e1e2e; color: #e0e0e0; font-family: Arial, sans-serif; }
+  h1 { text-align: center; font-size: 1.8rem; margin: 2rem 1.5rem 0; }
+  .main-section { display: flex; justify-content: space-between; align-items: flex-start; margin: 2rem; }
+  
+  /* Toggle button */
+  .toggle-button {
+    display: block; margin: 1rem auto; padding: 0.5rem 1rem;
+    background-color: #6272a4; color: #fff; border: none; border-radius: 6px;
+    cursor: pointer; transition: background-color 0.3s ease;
+  }
+  .toggle-button:hover { background-color: #4c567a; }
+  /* General Button Styles */
+.pin-button, .giveaway-button {
+  display: inline-block;
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Tradeoffer Button */
+.pin-button.tradeoffer {
+  background-color: #ffb600;
+  color: #1e1e2e;
+  font-weight: bold;
+  width: auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.pin-button.tradeoffer:hover {
+  background-color: #e6a500;
+  transform: translateY(-2px);
+}
+
+/* Join Button (Giveaway) */
+.giveaway-button {
+  background-color: #ff79c6;
+  color: #1e1e2e;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  width: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.giveaway-button:hover {
+  background-color: #e362c4;
+  transform: translateY(-2px);
+}
+
+  /* Pins Layout */
+  .pins-grid { flex: 1; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.5rem; }
+  .pin-box { background-color: #2d2f3b; border-radius: 12px; text-align: center; padding: 1.5rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .pin-box:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); }
+  .pin-img { width: 100%; max-width: 150px; height: auto; border-radius: 8px; margin-bottom: 1rem; transition: transform 0.2s ease; }
+  .pin-box:hover .pin-img { transform: scale(1.05); }
+  
+  /* Pin Details */
+  .pin-details { margin-top: 0.5rem; }
+  .pin-name { font-weight: bold; font-size: 1.1rem; margin: 0.5rem 0 0.8rem; color: #ffffff; }
+  .buttons { display: flex; gap: 0.5rem; justify-content: center; }
+  .icon-button {
+    display: inline-flex; justify-content: center; align-items: center;
+    width: 36px; height: 36px; border-radius: 6px; color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  .icon-button:hover { transform: translateY(-2px); }
+
+  /* Giveaway Section */
+  .giveaway-section { width: 250px; margin-left: 2rem; padding: 1rem; background-color: #ee9c31; border-radius: 8px; }
+  .giveaway-section h2 { color: #1e1e2e; text-align: center; }
+  .giveaway-grid { display: grid; gap: 1.5rem; }
+  .giveaway-button { background-color: #ff79c6; }
+  .giveaway-button:hover { background-color: #e362c4; transform: translateY(-2px); }
+
+  .sponsored-section { margin-top: 2rem; padding: 1rem; background-color: #ee9c31; border-radius: 8px; }
+  .sponsored-section h2 { color: #1e1e2e; text-align: center;}
+  .sponsored-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  .sponsor-button { background-color: #ff79c6; color: #1e1e2e; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; width: auto; border-radius: 8px; transition: transform 0.3s ease, background-color 0.3s ease; }
+
+  /* Sponsored Section: No Sponsors */
+  .sponsored-section h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ff79c6;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #1e1e2e;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 40%; /* Set width to 40% */
+  }
+</style>
+
 </html>
