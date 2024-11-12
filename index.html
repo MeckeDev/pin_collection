@@ -5,10 +5,10 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link rel="modulepreload" href="./_app/immutable/entry/start.C17V8aFz.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.B1AfmMdm.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BfcoiCSE.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.BtXp_tP3.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/runtime.CyuQeLeK.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.CFVNYGD9.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.D4OnGOSM.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/render.z-2H0A3D.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/disclose-version.Dgn9eJq8.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/if.k83uhtgX.js">
@@ -22,7 +22,7 @@
 			
 			<script>
 				{
-					__sveltekit_1irdghh = {
+					__sveltekit_hmzv75 = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						assets: "/pin_collection"
 					};
@@ -32,8 +32,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.C17V8aFz.js"),
-						import("./_app/immutable/entry/app.CFVNYGD9.js")
+						import("./_app/immutable/entry/start.BfcoiCSE.js"),
+						import("./_app/immutable/entry/app.D4OnGOSM.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
@@ -132,13 +132,22 @@
 		  transform: translateY(-2px);
 		}
 	  
-		.pin-button {
-		  background-color: #6272a4;
-		}
+	  .pin-button {
+		background-color: #6272a4;
+	  }
+	
+	  .pin-button:hover {
+		background-color: #4c567a;
+		transform: translateY(-2px);
+	  }
 	  
-		.pin-button:hover {
-		  background-color: #4c567a;
-		  transform: translateY(-2px);
-		}
+	  .trade-button {
+		background-color: #6272a4;
+	  }
+	
+	  .trade-button:hover {
+		background-color: #4c567a;
+		transform: translateY(-2px);
+	  }
 	  </style>
 </html>
