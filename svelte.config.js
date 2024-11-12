@@ -2,9 +2,11 @@ import adapter from '@sveltejs/adapter-static';
 
 export default {
   kit: {
-    adapter: adapter(),
-    paths: {
-      base: '/pin_collection',  // This should match your GitHub repository name
-    },
-  },
+    adapter: adapter({
+      pages: 'build',
+      assets: 'build',
+      fallback: 'index.html',  // Fallback for SPA mode
+      strict: false
+    })
+  }
 };
