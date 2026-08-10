@@ -4,7 +4,7 @@
   import { faShoppingBasket, faSearch } from "@fortawesome/free-solid-svg-icons";
   import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
 
-  let collected = [23, 10, 8, 41, 13, 9, 15, 17, 25, 28, 29, 42, 11, 30, 24, 18, 31, 37, 19, 38, 32, 26, 43, 39, 44, 33, 21, 27, 20, 40, 35, 34, 36];
+  let collected = [26, 33, 35, 36, 40, 44];
   let giveaways = [{ id: 36, url: "https://x.com/Mecke_Dev/status/1856354302601695734" }];
   let sponsors = []; // { id: 36, url: "https://x.com/Mecke_Dev" }
   let sponsor_count;
